@@ -162,3 +162,15 @@ select
 		width: 350px;
 		height: 200px;
 	}
+.search
+	{
+		margin-top: 400px;
+		text-align: center;
+		vertical-align: middle;
+	}
+.search1
+	{
+		width: 600px;
+		height: 130px;
+		font-size: 85px;
+	}
