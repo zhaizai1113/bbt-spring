@@ -9,7 +9,8 @@
 	<div class="header">
 		<h1 class="title1">百步梯春招<br>报名表</h1>
 	</div>
-	<div class="li">
+	<form onsubmit="return false">
+		<div class="li">
 		<p class="word">姓名</p>
 		<input type="text" name="name" placeholder="请输入姓名" class="ji"></input>
 	</div>
@@ -128,8 +129,9 @@
 		<p class="word">自我介绍</p>
 		<textarea name="self-introduce" class="intro"></textarea>
 	</div>
-	<span class="submit">
+	<div class="submit">
 		<button type="submit" onclick="window.location='final.html'" class="button1">提交</button>
-	</span>
+	</div>
+	</form>
 </body>
 </html>

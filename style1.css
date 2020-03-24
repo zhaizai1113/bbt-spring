@@ -1,6 +1,13 @@
 body{margin: 0;}
 html{background-color: #E8E8E8;}
 input{border: none;}
+form
+{
+	width:700px;
+	margin-left:auto;
+	margin-right: auto;
+	color: #555;
+}
 .title
 	{ 	text-align: center;
 		font-size: 135px;
@@ -64,7 +71,6 @@ input{border: none;}
 .li
 	{
 		margin-top: 50px;
-		margin-left: 15%;
 	}
 .word
 	{
