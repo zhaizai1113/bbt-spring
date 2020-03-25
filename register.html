@@ -13,25 +13,25 @@
 	<form onsubmit="return false">
 		<div class="li">
 		<p class="word">姓名</p>
-		<input type="text" name="name" placeholder="请输入姓名" class="ji"></input>
+		<input type="text" id="name" placeholder="请输入姓名" class="ji"></input>
 	</div>
 	<div class="li">
 		<p class="word">性别</p>
-		<input type="radio" name="gender" value="男" class="ki"></input>
+		<input type="radio" id="gender" value="男" class="ki"></input>
 		<label class="sex">男</label>
-		<input type="radio" name="gender" value="女" class="ki"></input>
+		<input type="radio" id="gender" value="女" class="ki"></input>
 		<label class="sex">女</label>
 	</div>
 	<div class="li">
 		<p class="word">年级</p>
-		<input type="radio" name="grade" value="大一" class="hi"></input>
+		<input type="radio" id="grade" value="大一" class="hi"></input>
 		<label class="grade">大一</label>
-		<input type="radio" name="grade" value="大二" class="hi"></input>
+		<input type="radio" id="grade" value="大二" class="hi"></input>
 		<label class="grade">大二</label>
 	</div>
 	<div class="li">
 		<p class="word">校区</p>
-		<select name="campus" class="sel">
+		<select id="campus" class="sel">
 			<option value="">请选择</option>
 			<option value="五山校区">五山校区</option>
 			<option value="大学城校区">大学城校区</option>
@@ -40,7 +40,7 @@
 	</div>
 	<div class="li">
 		<p class="word">学院</p>
-		<select name="college" class="sel">
+		<select id="college" class="sel">
 			<option value="">请选择</option>
 			<option value="机械与汽车工程学院">机械与汽车工程学院</option>
 			<option value="建筑学院">建筑学院</option>
@@ -74,11 +74,11 @@
 	</div>
 	<div class="li">
 		<p class="word">联系方式</p>
-		<input type="text" name="phone" class="ji1" placeholder="请输入11位长号">
+		<input type="text" id="phone" class="ji1" placeholder="请输入11位长号">
 	</div>
 	<div class="li">
 		<p class="word">第一志愿</p>
-		<select name="department1" class="sel1">
+		<select id="department1" class="sel1">
 					<option value="">请选择</option>
 					<option value="编辑部">编辑部</option>
 					<option value="综合管理部">综合管理部</option>
@@ -95,7 +95,7 @@
 	</div>
 	<div class="li">
 		<p class="word">第二志愿</p>
-		<select name="department2" class="sel1">
+		<select id="department2" class="sel1">
 					<option value="">请选择</option>
 					<option value="编辑部">编辑部</option>
 					<option value="综合管理部">综合管理部</option>
@@ -112,14 +112,14 @@
 	</div>
 	<div class="li">
 		<p class="word">是否服从调剂</p>
-		<input type="radio" name="adjust" class="ki1"></input>
+		<input type="radio" id="adjust" class="ki1"></input>
 		<label class="adjust">是</label>
-		<input type="radio" name="adjust" class="ki1"></input>
+		<input type="radio" id="adjust" class="ki1"></input>
 		<label class="adjust">否</label>
 	</div>
 	<div class="li">
 		<p class="word">可面试时间</p>
-		<select name="time" class="sel2">
+		<select id="time" class="sel2">
 			<option value="">请选择</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
@@ -128,7 +128,7 @@
 	</div>
 	<div class="li">
 		<p class="word">自我介绍</p>
-		<textarea name="self-introduce" class="intro"></textarea>
+		<textarea id="self-introduce" class="intro"></textarea>
 	</div>
 	<div class="submit">
 		<button type="submit" onclick="window.location='final.html'" class="button1">提交</button>

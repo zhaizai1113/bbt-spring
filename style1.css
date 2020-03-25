@@ -8,6 +8,11 @@ form
 	margin-right: auto;
 	color: #555;
 }
+.swiper-container {
+    width: 700px;
+    height: 1350px;
+}
+
 .title
 	{ 	text-align: center;
 		font-size: 135px;
@@ -19,6 +24,22 @@ form
 		text-align: center;
 		font-size: 85px;
 		margin-top: 135px;
+		font-weight: 400;
+		margin-bottom: 100px;
+	}
+.title2
+	{
+		text-align: center;
+		font-size: 135px;
+		margin-top: 350px;
+		font-weight: 400;
+		margin-bottom: 100px;
+	}
+.sectitle1
+	{
+		text-align: center;
+		font-size: 85px;
+		margin-top: 250px;
 		font-weight: 400;
 		margin-bottom: 100px;
 	}
@@ -71,6 +92,22 @@ form
 .li
 	{
 		margin-top: 50px;
+	}
+.ai
+	{
+		margin-top: 50px;
+		float: left;
+		width: 100%;
+		margin-left: 150px;
+	}
+.bi
+	{
+		margin-top: 50px;
+		float: left;
+		width: 100%;
+		margin-left: 150px;
+		height: 200px;
+		margin-bottom: 100px;
 	}
 .word
 	{
