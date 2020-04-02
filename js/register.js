@@ -1,30 +1,21 @@
-var username = document.getElementByName('username').value;
+var username = document.getElementById('username').value;
 var gender = document.querySelector('input[name="gender"]:checked');
-var grade = document.getElementByName("grade").options[gradeIndex].value;
-var campus = document.getElementByName("campus").options[campusIndex].value;
-var college = document.getElementByName("college").options[collegeIndex].value;
-var phone = document.getElementByName('phone');
-var department1 = document.getElementByName("department1").options[department1Index].value;
-var department2 = document.getElementByName("department2").options[department2Index].value;
+var grade = document.getElementById("grade");
+var campus = document.getElementById("campus");
+var college = document.getElementById("college");
+var phone = document.getElementById('phone');
+var department1 = document.getElementById("department1");
+var department2 = document.getElementById("department2");
 var adjust = document.querySelector('input[name="adjust"]:checked');
-var time = document.getElementByName("time").options[timeIndex].value;
-var self_introduce = document.getElementByName('self_introduce');
+var time = document.getElementById("time");
+var self_introduce = document.getElementById('self_introduce');
 var phoneReg = /^1[0-9]{10}$/;
 
 
-else {
-      let gender = checkedGender.value;
-      let expectation = checkedExp.value;
-      disable = true;
-      fetch(prefix + "/info", {
-        method: "post",
-        credentials: "include",
-        headers: {
-          "Content-Type": "application/json"
-        },
+
 
 function Confirm() {
-  if (!disable) {
+ /* if (!disable) {
     document.getElementById("overlay").style.display = "none";
     document.getElementById("tips").style.visibility = "hidden";
     let nickname = document.getElementById("nickname").value;
@@ -35,13 +26,13 @@ function Confirm() {
     let wechat = document.getElementById("wechat").value;
     let checkedExp = document.querySelector(
       'input[name="expectation"]:checked'
-    );
+    );*/
     let err = document.getElementById("error");
     let phoneReg = /^1[0-9]{10}$/;
 
     if (username === "") {
       err.innerText = "请输入你的姓名";
-    } else if (gender === null) {
+    } else if (gender === "") {
       err.innerText = "请选择你的性别";
     } else if (grade === "") {
       err.innerText = "请选择你的年级";
@@ -49,8 +40,8 @@ function Confirm() {
       err.innerText = "请输入你的校区";
     } else if (college === "") {
       err.innerText = "请输入你的学院";
-    } else if (!phoneReg.test(tel)) {
-      err.innerText = "手机号错误";
+    } else if (!phoneReg.test(phone)) {
+      err.innerhtml="请输入你的手机号码";
     } else if (department1 === "") {
       err.innerText = "请选择你的第一志愿";
     } else if (adjust === null) {
@@ -85,6 +76,7 @@ function Confirm() {
           }
           disable = false;
         });
+          window.location='final.html';
     }
-  }
+ // }
 }
