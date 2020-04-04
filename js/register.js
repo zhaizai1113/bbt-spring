@@ -1,6 +1,6 @@
-var username = document.getElementById('username').value;
+var username = $("#username").val;
 var gender = document.querySelector('input[name="gender"]:checked');
-var grade = document.getElementById("grade");
+var grade = document.querySelector('input[name="grade"]:checked');
 var campus = document.getElementById("campus");
 var college = document.getElementById("college");
 var phone = document.getElementById('phone');
@@ -15,25 +15,12 @@ var phoneReg = /^1[0-9]{10}$/;
 
 
 function Confirm() {
- /* if (!disable) {
-    document.getElementById("overlay").style.display = "none";
-    document.getElementById("tips").style.visibility = "hidden";
-    let nickname = document.getElementById("nickname").value;
-    let gradeIndex = document.getElementById("grade").selectedIndex;
-    let grade = document.getElementById("grade").options[gradeIndex].value;
-    let checkedGender = document.querySelector('input[name="gender"]:checked');
-    let tel = document.getElementById("tel").value;
-    let wechat = document.getElementById("wechat").value;
-    let checkedExp = document.querySelector(
-      'input[name="expectation"]:checked'
-    );*/
-    let err = document.getElementById("error");
-    let phoneReg = /^1[0-9]{10}$/;
-
     if (username === "") {
-      err.innerText = "请输入你的姓名";
-    } else if (gender === "") {
-      err.innerText = "请选择你的性别";
+      $("#errusername").html("请输入你的姓名");
+      $("#errusername").css("color",'red');
+    } else if (gender === null) {
+      $("#errsex").html("请选择你的性别");
+      $("$errsex").css("color",'red');
     } else if (grade === "") {
       err.innerText = "请选择你的年级";
     } else if (campus === "") {

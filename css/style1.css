@@ -105,7 +105,7 @@ form
 	background-repeat: round;
 	-webkit-background-size: 100%;
 	background-size: 100%;
-	height: 2500px;
+	height: 2700px;
 	width: 100%;
 }
 .bg12
@@ -247,20 +247,39 @@ form
     	margin-bottom: 40px;
     	font-weight: 100;
 	}
-.button:active
-{
-	background: url(../img/btac.png);
-	width:460px;
-   	height:120px;
-    color:#00563F;
-    font-size: 50px;
-    border-radius: 4px;
-    border: none;
-    display:block;
-    margin:0 auto;
-    margin-top:65px;
-    padding-bottom: 5px;
-}
+.button00
+	{
+		width:355px;
+   		height:120px;
+		background: url(../img/bt11.png);
+    	color:#055253;
+    	font-size: 50px;
+    	border-radius: 4px;
+    	border: none;
+    	display:block;
+    	margin:0 auto;
+    	margin-top:65px;
+    	padding-bottom: 5px;
+    	margin-bottom: 40px;
+    	font-weight: 100;
+	}
+.button0
+	{
+		width:460px;
+   		height:120px;
+		background: url(../img/btac.png);
+    	color:#055253;
+    	font-size: 50px;
+    	border-radius: 4px;
+    	border: none;
+    	display:block;
+    	margin:0 auto;
+    	margin-top:65px;
+    	padding-bottom: 5px;
+    	margin-bottom: 40px;
+    	font-weight: 100;
+	}
+
 .button1
 	{
 		width:465px;
@@ -275,19 +294,19 @@ form
     	border: none;
     	font-weight: 100;
 	}
-.button1:active
+.button10
 	{
 		width:465px;
    		height:120px;
 		background: url(../img/btac.png);
-    	color:#00563F;
+    	color:#055253;
     	font-size: 50px;
     	display:block;
     	margin:0 auto;
     	margin-top:65px;
-    	margin-bottom: 60px;
     	padding-bottom: 5px;
     	border: none;
+    	font-weight: 100;
 	}
 .button2
 	{
@@ -305,21 +324,22 @@ form
     	margin-bottom: 40px;
     	font-weight: 100;
 	}
-.button2:active
-{
-	background: url(../img/btac.png);
-	width:460px;
-   	height:120px;
-    color:#00563F;
-    font-size: 50px;
-    border-radius: 4px;
-    border: none;
-    display:block;
-    margin:0 auto;
-    margin-top:65px;
-    padding-bottom: 5px;
-    margin-bottom: 100px;
-}
+.button20
+	{
+		width:460px;
+   		height:120px;
+		background: url(../img/btac.png);
+    	color:#055253;
+    	font-size: 50px;
+    	border-radius: 4px;
+    	border: none;
+    	display:block;
+    	margin:0 auto;
+    	margin-top:65px;
+    	padding-bottom: 5px;
+    	margin-bottom: 40px;
+    	font-weight: 100;
+	}
 .li
 	{
 		margin-top: 50px;
@@ -352,11 +372,13 @@ form
 	}
 .sex
 	{
-		font-size: 50px;
+		font-size: 30px;
+		color: black;
 	}
 .grade
 	{
-		font-size: 50px;
+		font-size: 30px;
+		color: black;
 	}
 .hi
 	{
@@ -378,11 +400,12 @@ select
 		height: 50px;
 		margin-top: 50px;
 		margin-left: 185px;
-		font-size: 25px;
+		font-size: 30px;
 	}
 .adjust
 	{
-		font-size: 50px;
+		font-size: 30px;
+		color: black;
 	}
 .right
 	{
@@ -403,7 +426,7 @@ select
 		height: 50px;
 		margin-top: 50px;
 		margin-left: 100px;
-		font-size: 25px;
+		font-size: 30px;
 	}
 .ki1
 	{
@@ -419,6 +442,7 @@ select
 		height: 50px;
 		margin-top: 50px;
 		margin-left: 45px;
+		font-size: 30px;
 	}
 .intro
 	{
