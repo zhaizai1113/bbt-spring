@@ -7,8 +7,8 @@
 </head>
 <body>
 	<div class="bg1">
-		<div class="header">
-			<h1 class="title1">百步梯春招<br>报名表</h1>
+		<div class="header" style="height: 300px;padding-top: 50px;">
+			<h1 class="title1" style="color:#085644">报名表</h1>
 		</div>
 		<form onsubmit="return false">
 			<div class="li">
@@ -17,16 +17,20 @@
 		</div>
 		<div class="li">
 			<p class="word">性别</p>
-			<input type="radio" id="gender" value="男" class="ki"></input>
-			<label class="sex">男</label>
-			<input type="radio" id="gender" value="女" class="ki"></input>
-			<label class="sex">女</label>
+			<input type="radio" id="gender" value="男" class="ki" name="gender"></input>
+			<label class="sex">
+				<span class="sex">男</span>
+			</label>
+			<input type="radio" id="gender" value="女" class="ki" name="gender"></input>
+			<label class="sex">
+				<span class="sex">女</span>
+			</label>
 		</div>
 		<div class="li">
 			<p class="word">年级</p>
-			<input type="radio" id="grade" value="大一" class="hi"></input>
+			<input type="radio" id="grade" value="大一" class="hi" name="grade"></input>
 			<label class="grade">大一</label>
-			<input type="radio" id="grade" value="大二" class="hi"></input>
+			<input type="radio" id="grade" value="大二" class="hi" name="grade"></input>
 			<label class="grade">大二</label>
 		</div>
 		<div class="li">
@@ -112,9 +116,9 @@
 		</div>
 		<div class="li">
 			<p class="word">是否服从调剂</p>
-			<input type="radio" id="adjust" class="ki1"></input>
+			<input type="radio" id="adjust" class="ki1" name="adjust"></input>
 			<label class="adjust">是</label>
-			<input type="radio" id="adjust" class="ki1"></input>
+			<input type="radio" id="adjust" class="ki1" name="adjust"></input>
 			<label class="adjust">否</label>
 		</div>
 		<div class="li">
