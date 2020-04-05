@@ -30,11 +30,11 @@
 			<div id="errsex" class="ki" style="margin: 0;padding-left: 280px;font-size: 30px;"></div>		</div>
 		<div class="li">
 			<p class="word">年级</p>
-			<input type="radio" id="grade" value="大一" class="hi" name="grade"></input>
+			<input type="radio" id="grade" value="1" class="hi" name="grade"></input>
 			<label class="grade">大一</label>
-			<input type="radio" id="grade" value="大二" class="hi" name="grade"></input>
+			<input type="radio" id="grade" value="2" class="hi" name="grade"></input>
 			<label class="grade">大二</label>
-			<div id="err_username" class="ki" style="margin: 0;padding-left: 280px;font-size: 30px;"></div>		</div>
+			<div id="errgrade" class="ki" style="margin: 0;padding-left: 280px;font-size: 30px;"></div>		</div>
 		<div class="li">
 			<p class="word">校区</p>
 			<select id="campus" class="sel">
@@ -43,7 +43,7 @@
 				<option value="大学城校区">大学城校区</option>
 				<option value="番禺校区">番禺校区</option>
 			</select>
-			<div id="err_username" class="ki" style="margin: 0;padding-left: 280px;font-size: 30px;"></div>
+			<div id="errcampus" class="ki" style="margin: 0;padding-left: 280px;font-size: 30px;"></div>
 		</div>
 		<div class="li">
 			<p class="word">学院</p>
@@ -78,12 +78,12 @@
 				<option value="医学院">医学院</option>
 				<option value="国际教育学院">国际教育学院</option>
 			</select>
-			<div id="err_username" class="ki" style="margin: 0;padding-left: 280px;font-size: 30px;"></div>
+			<div id="errcollege" class="ki" style="margin: 0;padding-left: 280px;font-size: 30px;"></div>
 			</div>
 		<div class="li">
 			<p class="word">联系方式</p>
 			<input type="text" id="phone" class="ji1" placeholder="请输入11位长号">
-			<div id="err_username" class="ki" style="margin: 0;padding-left: 280px;font-size: 30px;"></div>
+			<div id="errphone" class="ki" style="margin: 0;padding-left: 280px;font-size: 30px;"></div>
 			</div>
 		<div class="li">
 			<p class="word">第一志愿</p>
@@ -101,7 +101,7 @@
 						<option value="视频部">视频部</option>
 						<option value="视觉设计部">视觉设计部</option>
 					</select>
-			<div id="err_username" class="ki" style="margin: 0;padding-left: 280px;font-size: 30px;"></div>
+			<div id="errdeparment" class="ki" style="margin: 0;padding-left: 280px;font-size: 30px;"></div>
 			</div>
 		<div class="li">
 			<p class="word">第二志愿</p>
@@ -126,7 +126,7 @@
 			<label class="adjust">是</label>
 			<input type="radio" id="adjust" class="ki1" name="adjust"></input>
 			<label class="adjust">否</label>
-			<div id="err_username" class="ki" style="margin: 0;padding-left: 280px;font-size: 30px;"></div>
+			<div id="erradjust" class="ki" style="margin: 0;padding-left: 280px;font-size: 30px;"></div>
 			</div>
 		<div class="li">
 			<p class="word">可面试时间</p>
@@ -136,14 +136,14 @@
 				<option value="2">2</option>
 				<option value="3">3</option>
 			</select>
-			<div id="err_username" class="ki" style="margin: 0;padding-left: 280px;font-size: 30px;"></div>
+			<div id="errtime" class="ki" style="margin: 0;padding-left: 280px;font-size: 30px;"></div>
 			</div>
 		<div class="li">
 			<p class="word">自我介绍</p>
-			<textarea id="self_introduce" class="intro"></textarea>
+			<textarea id="selfintro" class="intro"></textarea>
 		</div>
 		<div class="submit">
-			<button type="submit" onclick="Confirm()" class="button10">提交</button>
+			<button type="submit" onclick="submit()" class="button10">提交</button>
 		</div>
 		</form>
 			<script src="js/register.js"></script>
