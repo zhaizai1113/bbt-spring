@@ -14,30 +14,30 @@ app.config['SECRET_KEY'] = config.app['secret_key']
 con=pymysql.connect(db['host'],db['user'],db['passwd'],db['database'],charset='utf8')
 cursor=con.cursor()
 
-@app.route('/',methods=['post','get'],endpoint='apply')
+@app.route('/apply',methods=['post','get'],endpoint='apply')
 def apply():
-    # username = request.values.get("username")
-    # sex = request.values.get("sex")
-    # grade = request.values.get("grade")
-    # location = request.values.get("location")
-    # academy = request.values.get("academy")
-    # phone = request.values.get("phone")
-    # first = request.values.get("first")
-    # second = request.values.get("second")
-    # adjust = request.values.get("adjust")
-    # time = request.values.get("time")
-    # introduce = request.values.get("introduce")
-    username = "admin"
-    sex = "0"
-    grade = "1"
-    location = "第三次调试"
-    academy = "软件学院"
-    phone = "15564660744"
-    first = "软件"
-    second = "医学"
-    adjust = "0"
-    time = '2020-4-5'
-    introduce = "我爱学习"
+    username = request.values.get("username")
+    sex = request.values.get("sex")
+    grade = request.values.get("grade")
+    location = request.values.get("location")
+    academy = request.values.get("academy")
+    phone = request.values.get("phone")
+    first = request.values.get("first")
+    second = request.values.get("second")
+    adjust = request.values.get("adjust")
+    time = request.values.get("time")
+    introduce = request.values.get("introduce")
+    # username = "admin"
+    # sex = "0"
+    # grade = "1"
+    # location = "第三次调试"
+    # academy = "软件学院"
+    # phone = "15564660744"
+    # first = "软件"
+    # second = "医学"
+    # adjust = "0"
+    # time = '2020-4-5'
+    # introduce = "我爱学习"
     #print('hello1')
     if check1(username, sex, grade, location, academy, phone, first, adjust, time, introduce):
         #print('check函数正常')
