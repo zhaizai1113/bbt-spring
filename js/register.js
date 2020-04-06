@@ -9,11 +9,11 @@ var department2 = $("select[id='department2']").val();
 var adjust = $("input[name='adjust']").val();
 var time = $("select[id='time']").val();
 var self_introduce = $("textarea[id='selfintro']").val();
-var phoneche=0;
+var phoneche = 0;
 
 function phonecheck() {
   if (phone.toString().length!=11) {
-    phoneche=1
+    phoneche = 1;
   }
 }
 
@@ -21,7 +21,7 @@ function phonecheck() {
 
 
 function submit() {
-    if (username === "") {
+    if (username == "") {
       $("#errusername").html("请输入你的姓名");
       $("#errusername").css("color",'red');
     } else if (gender === null) {
@@ -34,7 +34,7 @@ function submit() {
     } else if (college === "") {
       err.innerText = "请输入你的学院";
     } else if (phonecheck(phone)===1) {
-      err.innerhtml="电请输入正确的电话号码";
+      err.innerhtml="请输入正确的电话号码";
     } else if (department1 === "") {
       err.innerText = "请选择你的第一志愿";
     } else if (adjust === null) {
@@ -42,9 +42,39 @@ function submit() {
     } else if (department1 === "") {
       err.innerText = "请选择你的面试时间";
     } else {
-      let gender = checkedGender.value;
-      let expectation = checkedExp.value;
-      disable = true;
+      fetch(url,init).then(function(res) {
+        return res.json();
+      })
+      .then(function(myJson) {
+        console.log(myJson);
+      })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       fetch(prefix + "/info", {
         method: "post",
         credentials: "include",
